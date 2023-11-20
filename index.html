@@ -8,16 +8,11 @@
     <link rel="icon"  href="images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<style>
-  .animate {
-  transition: all 0.3s ease; /* Vous pouvez ajuster la durée et le type d'animation selon vos préférences */
-}
-
-/* Ajoutez des règles spécifiques pour chaque élément si nécessaire */
 
 </style>
 <body>
@@ -74,8 +69,9 @@
       <!-- START THE CONTENT FOR THE VIDEO -->
       <div class="col-md-6 intros text-end">
         <div class="video-box">
-          <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
-          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+          <img src="images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
+          <!-- Ajoutez un lien ou un bouton pour ouvrir la vidéo -->
+          <a href="#" onclick="openYouTubeVideo('QxaGqXPUfRw');" class="position-absolute top-50 start-50 translate-middle">
             <span>
               <i class="fas fa-play-circle"></i>
             </span>
@@ -104,7 +100,7 @@
   <!-- START THE CONTENT FOR THE SERVICES  -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4" data-aos="fade-left" data-aos-duration="2000">
         <div class="services__content animate">
           <div class="icon d-block fas fa-globe"></div>
           <h3 class="display-3--title mt-1">Développement Web</h3>
@@ -118,7 +114,7 @@
       
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end" data-aos="fade-right" data-aos-duration="2000">
         <div class="services__pic">
           <img src="images/developement.jpg" width="500" alt="marketing illustration" class="img-fluid">
         </div>
@@ -127,12 +123,12 @@
   
     <!-- START THE WEB DEVELOPMENT CONTENT  -->
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start" data-aos="fade-left" data-aos-duration="2000">
         <div class="services__pic">
           <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4" data-aos="fade-right" data-aos-duration="2000">
         <div class="services__content">
           <div class="icon d-block fas fa-code"></div>
           <h3 class="display-3--title mt-1">Qu'est ce qu'un Developpeur Web ? </h3>
@@ -282,7 +278,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-4" data-aos="flip-up" data-aos-duration="1500">
     <div class="skill-box">
       <div class="icon d-block fas fa-comments"></div>
       <h6 class="mt-3">Maîtrise de la Communication</h6>
@@ -290,7 +286,7 @@
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-4" data-aos="flip-down" data-aos-duration="1500">
     <div class="skill-box">
       <div class="icon d-block fas fa-clock"></div>
       <h6 class="mt-3">Gestion du Temps</h6>
@@ -298,7 +294,7 @@
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-4" data-aos="flip-up" data-aos-duration="1500">
     <div class="skill-box">
       <div class="icon d-block fas fa-lightbulb"></div>
       <h6 class="mt-3">Résolution de Problèmes</h6>
@@ -312,11 +308,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 developer-missions__pic ">
-        <div class="services__pic">
+        <div class="services__pic" data-aos="fade-left" data-aos-duration="2000">
           <img src="images/illustration.jpg" alt="developer missions illustration" class="img-fluid">
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 developer-missions__content">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 developer-missions__content" data-aos="fade-right" data-aos-duration="2000">
       
         <h3 class="display-3--title mt-1">Les Missions d'un Développeur Web</h3>
        
@@ -350,7 +346,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
   <div class="container">
     <div class="row text-center text-white">
-      <h1 class="display-3 fw-bold">Pourquoi devenir développeur web ?</h1>
+      <h1 class="display-3 fw-bold" data-aos="zoom-in" data-aos-duration="2000">Pourquoi devenir développeur web ?</h1>
       <hr style="width: 100px; height: 3px; " class="mx-auto">
 <br>    </div>
 
@@ -444,14 +440,14 @@
                   De plus, il existe plusieurs types de développeurs :
                   <ul>
                     <li>le développeur front-end, en charge de la partie visible pour les utilisateurs du site ou de l'application ;</li>
-<li>le développeur back-end, qui manipule les bases de données, les serveurs et l'architecture ;</li>
-<li>le développeur full stack, polyvalent, qui gère les deux aspects, souvent sur des plus petits projets.</li>                  
-</ul>
+            <li>le développeur back-end, qui manipule les bases de données, les serveurs et l'architecture ;</li>
+                <li>le développeur full stack, polyvalent, qui gère les deux aspects, souvent sur des plus petits projets.</li>                  
+              </ul>
                 </div>
               </p>
             </div>
             <!-- client picture  -->
-            <div class="testimonials__picture">
+            <div class="testimonials__picture" data-aos="fade-right" data-aos-duration="2000">
               <img src="images/divirsity.jpg" alt="client-4 picture" class="rounded-circle img-fluid">
             </div>
             <!-- client name & role  -->
@@ -584,8 +580,7 @@ Si vous avez des question n'hesitez pas de nous informer       </p>
         <h5 class="text-capitalize fw-bold"><img src="images/logo.png" alt="logo image" width="30" height="30"/>&nbsp;&nbsp;Developpeur</h5>
         <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
         <p class="lh-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex obcaecati blanditiis reprehenderit ab mollitia voluptatem consectetur?
-        </p>
+Bienvenue dans notre site web , le premier platforme qui supporte le métier d'un développeur web         </p>
       </div>
     
       
@@ -640,5 +635,29 @@ Si vous avez des question n'hesitez pas de nous informer       </p>
     
     </script>
      <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+
+<script type="text/javascript">
+  const lightbox = GLightbox({
+    'touchNavigation': true,
+    'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+    'type': 'video',
+    'source': 'youtube', //vimeo, youtube or local
+    'width': 900,
+    'autoPlayVideos': 'true',
+});
+
+</script>
+ <script src="assets/js/bootstrap.bundle.min.js"></script>
+ <script>
+  function openYouTubeVideo(videoId) {
+    window.location.href = 'https://www.youtube.com/embed/' + videoId;
+    // Vous pouvez également utiliser window.open pour ouvrir dans une nouvelle fenêtre
+    // window.open('https://www.youtube.com/embed/' + videoId, '_self');
+  }
+</script>
 </body>
 </html>
